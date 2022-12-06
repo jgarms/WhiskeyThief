@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Whiskey Thief
 //
-//  Created by Lisa Garms on 12/5/22.
+//  Created by Jess Garms on 12/5/22.
 //
 
 import SwiftUI

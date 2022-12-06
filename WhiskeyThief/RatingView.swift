@@ -2,7 +2,7 @@
 //  RatingView.swift
 //  Bookworm
 //
-//  Created by Lisa Garms on 11/27/22.
+//  Created by Jess Garms on 11/27/22.
 //
 
 import SwiftUI
