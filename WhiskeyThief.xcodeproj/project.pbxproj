@@ -11,6 +11,10 @@
 		14DEF281293EBD85000C93D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DEF280293EBD85000C93D9 /* ContentView.swift */; };
 		14DEF283293EBD87000C93D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DEF282293EBD87000C93D9 /* Assets.xcassets */; };
 		14DEF286293EBD87000C93D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DEF285293EBD87000C93D9 /* Preview Assets.xcassets */; };
+		14DEF28D293EBDAC000C93D9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DEF28C293EBDAC000C93D9 /* DataController.swift */; };
+		14DEF28F293EBDCA000C93D9 /* AddWhiskeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DEF28E293EBDCA000C93D9 /* AddWhiskeyView.swift */; };
+		14DEF291293EBDD3000C93D9 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DEF290293EBDD3000C93D9 /* RatingView.swift */; };
+		14DEF294293EBDDF000C93D9 /* WhiskeyThief.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14DEF292293EBDDF000C93D9 /* WhiskeyThief.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		14DEF280293EBD85000C93D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14DEF282293EBD87000C93D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14DEF285293EBD87000C93D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14DEF28C293EBDAC000C93D9 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		14DEF28E293EBDCA000C93D9 /* AddWhiskeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWhiskeyView.swift; sourceTree = "<group>"; };
+		14DEF290293EBDD3000C93D9 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		14DEF293293EBDDF000C93D9 /* WhiskeyThief.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhiskeyThief.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,12 @@
 		14DEF27D293EBD85000C93D9 /* WhiskeyThief */ = {
 			isa = PBXGroup;
 			children = (
+				14DEF28C293EBDAC000C93D9 /* DataController.swift */,
 				14DEF27E293EBD85000C93D9 /* WhiskeyThiefApp.swift */,
 				14DEF280293EBD85000C93D9 /* ContentView.swift */,
+				14DEF292293EBDDF000C93D9 /* WhiskeyThief.xcdatamodeld */,
+				14DEF290293EBDD3000C93D9 /* RatingView.swift */,
+				14DEF28E293EBDCA000C93D9 /* AddWhiskeyView.swift */,
 				14DEF282293EBD87000C93D9 /* Assets.xcassets */,
 				14DEF284293EBD87000C93D9 /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				14DEF281293EBD85000C93D9 /* ContentView.swift in Sources */,
+				14DEF294293EBDDF000C93D9 /* WhiskeyThief.xcdatamodeld in Sources */,
+				14DEF28D293EBDAC000C93D9 /* DataController.swift in Sources */,
 				14DEF27F293EBD85000C93D9 /* WhiskeyThiefApp.swift in Sources */,
+				14DEF291293EBDD3000C93D9 /* RatingView.swift in Sources */,
+				14DEF28F293EBDCA000C93D9 /* AddWhiskeyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +355,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		14DEF292293EBDDF000C93D9 /* WhiskeyThief.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				14DEF293293EBDDF000C93D9 /* WhiskeyThief.xcdatamodel */,
+			);
+			currentVersion = 14DEF293293EBDDF000C93D9 /* WhiskeyThief.xcdatamodel */;
+			path = WhiskeyThief.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 14DEF273293EBD85000C93D9 /* Project object */;
 }
