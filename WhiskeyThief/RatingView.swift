@@ -1,10 +1,3 @@
-//
-//  RatingView.swift
-//  Bookworm
-//
-//  Created by Jess Garms on 11/27/22.
-//
-
 import SwiftUI
 
 struct RatingView: View {

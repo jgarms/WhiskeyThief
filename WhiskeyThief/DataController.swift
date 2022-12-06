@@ -1,10 +1,3 @@
-//
-//  DataController.swift
-//  Bookworm
-//
-//  Created by Jess Garms on 11/27/22.
-//
-
 import CoreData
 import Foundation
 

@@ -1,10 +1,3 @@
-//
-//  AddWhiskeyView.swift
-//  Whiskey Thief
-//
-//  Created by Jess Garms on 12/5/22.
-//
-
 import SwiftUI
 
 struct AddWhiskeyView: View {
@@ -20,8 +13,8 @@ struct AddWhiskeyView: View {
     @State private var rating = 0.0
     @State private var color = "Gold"
     @State private var notes = ""
-    
-    let colors = ["Clear", "Straw", "Honey", "Gold", "Amber", "Caramel", "Mahogany"]
+
+    let colors = ["Mahogany", "Caramel", "Amber", "Gold", "Honey", "Straw", "Clear"]
     
     var body: some View {
         NavigationView {

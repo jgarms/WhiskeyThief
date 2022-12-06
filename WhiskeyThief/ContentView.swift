@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Whiskey Thief
-//
-//  Created by Jess Garms on 12/5/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
