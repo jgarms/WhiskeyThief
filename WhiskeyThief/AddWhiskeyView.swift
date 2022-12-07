@@ -16,15 +16,21 @@ struct AddWhiskeyView: View {
 
     let colors = ["Mahogany", "Caramel", "Amber", "Gold", "Honey", "Straw", "Clear"]
     
+    
+    
     var body: some View {
         NavigationView {
             Form {
                 Section {
                     TextField("Whiskey name", text: $name)
+                        .textInputAutocapitalization(.words)
                     TextField("Distiller", text: $distiller)
                     TextField("Age", value: $age, format: .number)
+                        .keyboardType(.numberPad)
                     TextField("Origin", text: $origin)
-                    TextField("Price", value: $price, format: .number)
+                        .textInputAutocapitalization(.words)
+                    TextField("Price", value: $price, format: .currency(code: "USD"))
+                        .keyboardType(.decimalPad)
                     Picker("Color", selection: $color) {
                         ForEach(colors, id: \.self) {
                             Text($0)
