@@ -13,6 +13,7 @@ struct AddWhiskeyView: View {
     @State private var rating = 0.0
     @State private var color = "Gold"
     @State private var notes = ""
+    @State private var estimatedPrice: Int? = nil
 
     let colors = ["Mahogany", "Caramel", "Amber", "Gold", "Honey", "Straw", "Clear"]
     
@@ -44,6 +45,10 @@ struct AddWhiskeyView: View {
                     RatingView($rating)
                 }
                 Section {
+                    TextField("Estimated Price", value: $price, format: .currency(code: "USD"))
+                        .keyboardType(.decimalPad)
+                }
+                Section {
                     Text("Notes")
                     TextEditor(text: $notes)
                 }
@@ -68,6 +73,9 @@ struct AddWhiskeyView: View {
         newWhiskey.origin = origin
         if price != nil {
             newWhiskey.price = Double(price!)
+        }
+        if estimatedPrice != nil {
+            newWhiskey.estimatedPrice = Double(estimatedPrice!)
         }
         newWhiskey.color = color
         newWhiskey.sampled = sampled
