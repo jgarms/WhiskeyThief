@@ -15,7 +15,7 @@ struct ContentView: View {
             List {
                 ForEach(whiskies) { whiskey in
                     NavigationLink {
-                        Text(whiskey.name!)
+                        DetailView(whiskey: whiskey)
                     } label: {
                         HStack {
                             Text(whiskey.name ?? "Unknown Whiskey")

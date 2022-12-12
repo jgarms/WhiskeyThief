@@ -45,7 +45,7 @@ struct AddWhiskeyView: View {
                     RatingView($rating)
                 }
                 Section {
-                    TextField("Estimated Price", value: $price, format: .currency(code: "USD"))
+                    TextField("Estimated Price", value: $estimatedPrice, format: .currency(code: "USD"))
                         .keyboardType(.decimalPad)
                 }
                 Section {
@@ -66,11 +66,15 @@ struct AddWhiskeyView: View {
         let newWhiskey = Whiskey(context: moc)
         newWhiskey.id = UUID()
         newWhiskey.name = name
-        newWhiskey.distiller = distiller
+        if !distiller.isEmpty {
+            newWhiskey.distiller = distiller
+        }
         if age != nil {
             newWhiskey.age = Int32(age!)
         }
-        newWhiskey.origin = origin
+        if !origin.isEmpty {
+            newWhiskey.origin = origin
+        }
         if price != nil {
             newWhiskey.price = Double(price!)
         }
@@ -80,7 +84,9 @@ struct AddWhiskeyView: View {
         newWhiskey.color = color
         newWhiskey.sampled = sampled
         newWhiskey.rating = rating
-        newWhiskey.notes = notes
+        if !notes.isEmpty {
+            newWhiskey.notes = notes
+        }
         
         try? moc.save()
         
